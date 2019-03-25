@@ -6,7 +6,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class Question extends Model
 {
-    protected $filliable = ['title','body'];
+    protected $fillable = ['title','body',];
     
     /**
      * The relationship between User model is here.
