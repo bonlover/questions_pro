@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class RenameAnsersInQuestionsTable extends Migration
+class RenameAnswersInQuestionsTable extends Migration
 {
     /**
      * Run the migrations.
