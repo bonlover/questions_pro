@@ -42,11 +42,13 @@ class User extends Authenticatable
      *
      * @var array
      */
-    public function questions() {
+    public function questions() 
+    {
         return $this->hasMany(Question::class);
     }
 
-    public function getUrlAttribute() {
+    public function getUrlAttribute() 
+    {
         // return route("questions.show", $this->id);
         return '#';
     }
