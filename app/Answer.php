@@ -32,6 +32,10 @@ class Answer extends Model
             $answer->question->increment('answers_count');
             // $answer->question->saved();
         });
+
+        static::deleted(function($answer){
+            $answer->question->decrement('answers_count');
+        });
     }
     public function getCreatedDateAttribute() {
         return $this->created_at->diffForHumans();
